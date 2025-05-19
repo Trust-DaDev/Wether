@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-100 min-h-screen flex items-center justify-center"> 
+    <div class="flex w-full justify-center items-center max-w-md min-h-screen flex-col  mt-20">
+        <h1 class="text-5xl font-mono font-bold text-cyan-500 bg-clip-text text-transparent bg-[url('./weath.jpg')] 
+        bg-no-repeat bg-cover bg-left bg-[length:200%_100%] animate-moving-bg text-center mb-20">Wether</h1> 
+        <input id="city" class="p-2 border-2 rounded w-full mb-4" type="text" placeholder="Enter City Name">
+        <button id="getWeather" class="bg-blue-500 text-white p-2 rounded w-full hover:bg-blue-600 
+        hover:shadow-lg transition-all duration-200">Get Weather</button>
+    
+        <div id="weatherInfo" class="mt-20 text-center hidden bg-white w-[600px] h-[200px] p-10 rounded-[10px] shadow-lg">
+          <h2 id="cityName" class="text-2xl font-semibold text-blue-500 mb-2"></h2>
+          <p id="temperature" class="text-xl text-gray-800 mb-2 font-semibold"></p>
+          <p id="description" class="text-xl text-gray-800 mb-2 font-semibold"></p>
+          <p id="humidity" class="text-md text-gray-600 mb-4"></p>
+        </div>
+
+    </div>
+    <div id="toast" class="fixed bottom-5 right-5 bg-white border-l-4 border-blue-500 shadow-lg p-4 rounded-lg text-gray-800 font-medium hidden z-50 transition-all duration-300">
+        <span id="toastMsg"></span>
+      </div>
+      
+    <script src="script.js"></script>
+</body>
+</html>
