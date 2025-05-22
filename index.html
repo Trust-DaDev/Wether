@@ -8,6 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-blue-100 min-h-screen flex items-center justify-center"> 
+  <div id="cookieConsent" class="fixed bottom-5 right-5 max-w-md bg-white shadow-lg rounded-lg p-4 text-gray-800 font-sans flex flex-col sm:flex-row items-center space-y-3 sm:space-y-0 sm:space-x-4 z-50 hidden">
+  <div class="flex-1 text-sm">
+    This website uses cookies to improve your experience. Do you accept cookies?
+    <a href="/privacy" class="text-blue-600 underline ml-1" target="_blank" rel="noopener noreferrer">Learn more</a>
+  </div>
+  <div class="flex space-x-2">
+    <button id="acceptCookies" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md transition">Accept</button>
+    <button id="rejectCookies" class="bg-gray-300 hover:bg-gray-400 text-gray-800 px-4 py-2 rounded-md transition">Reject</button>
+  </div>
+</div>
+
+
     <div class="flex w-full justify-center items-center max-w-md min-h-screen flex-col  mt-20">
         <h1 class="text-5xl font-mono font-bold text-cyan-500 bg-clip-text text-transparent bg-[url('./weath.jpg')] 
         bg-no-repeat bg-cover bg-left bg-[length:200%_100%] animate-moving-bg text-center mb-20">Wether</h1> 
